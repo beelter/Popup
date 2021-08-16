@@ -1,0 +1,245 @@
+<div id="mydiv" style="display: none; z-index: 10000;">
+  <div class="modal-container">
+    <div class="modal-content">
+      <div class="close-btn" id="send2">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path fill="#000000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+        </svg>
+      </div>
+      <div class="column left-side">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Aldi_Nord_201x_logo.svg/1200px-Aldi_Nord_201x_logo.svg.png">
+      </div>
+      <div class="column right-side">
+        <h2>Zapisz się do naszego newsletter'a i otrzymuj informacje o najlepszych promocjach!</h2>
+        <p>Prezentujemy najnowszą ofertę ALDI w dobrej cenie.</p>
+        <a href="https://www.aldi.pl/narzedzia/newsletter/zapis-do-newslettera.html"><div class="regist-content">
+          <button class="btn-2">Zapisz się!</button>
+					</div></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #myModal {
+	z-index: 10000;
+	display: flex;
+	justify-content: center;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-container {
+  width: 570px;
+  margin: 4em auto;
+  background-color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.5);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	position: fixed;
+	z-index: 999;
+	position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-content {
+  position: relative;
+  padding: 40px 20px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.close-btn {
+	position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -10px;
+  right: -5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+.left-side img {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.column {
+	float: left;
+}
+
+.left-side {
+  width: 35%;
+}
+
+.right-side {
+  width: 60%;
+  margin-left: 5%;
+}
+
+.modal-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.regist-content input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  padding-left: 5px;
+}
+
+.btn-2 {
+  width: 100%;
+  border: 0;
+  padding: 13px 0;
+  text-transform: uppercase;
+  background-color: #F3554B;
+  color: #ffffff;
+  cursor: pointer;
+	
+}
+
+.btn-2:hover {
+  background-color: #F17C75;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  box-sizing: border-box;
+  font-family: 'Open  Sans', sans-serif;
+}
+
+#myModal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-container {
+  width: 250px;
+  margin: 3em auto;
+  background-color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.5);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+.modal-content {
+  position: relative;
+  padding: 4px 2px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+	font-size: 11px;
+}
+	
+	.modal-content p {
+  margin-top: 0;
+	font-size: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -10px;
+  right: -5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+.left-side img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.column {
+  float: left;
+}
+
+.left-side {
+  width: 35%;
+}
+
+.right-side {
+  width: 60%;
+  margin-left: 5%;
+}
+
+.modal-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.regist-content input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 50px;
+  height: 10px;
+  padding-left: 5px;
+}
+
+.btn {
+  width: 100%;
+  border: 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+	
+}
+
+.btn:hover {
+  background-color: #F17C75;
+}
+}
+
+
+</style>
+
+<script>
+(function() {
+  setTimeout(function() {
+        document.getElementById('mydiv').style.display = "block";
+    }, 6000);
+
+    function hide() {
+        document.getElementById("mydiv").style.display = "none";
+    }
+
+    document.querySelector('#send2.close-btn').addEventListener('click', function() {
+        hide();
+    })
+})();
+</script>
